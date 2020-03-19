@@ -1,0 +1,57 @@
+I, [2020-03-19T22:45:08.373625 #62308]  INFO -- : Registered expected interaction POST /users
+D, [2020-03-19T22:45:08.373935 #62308] DEBUG -- : {
+  "description": "A request to create a valid user",
+  "request": {
+    "method": "POST",
+    "path": "/users",
+    "headers": {
+      "Content-Type": "application/json;charset=utf-8"
+    },
+    "body": {
+      "name": "Test User"
+    }
+  },
+  "response": {
+    "status": 201,
+    "headers": {
+      "Content-Type": "application/json;charset=utf-8"
+    },
+    "body": {
+      "id": 1,
+      "name": "Test user"
+    }
+  },
+  "metadata": null
+}
+I, [2020-03-19T22:45:08.385730 #62308]  INFO -- : Received request POST /users
+D, [2020-03-19T22:45:08.385848 #62308] DEBUG -- : {
+  "path": "/users",
+  "query": "",
+  "method": "post",
+  "body": {
+    "name": "Test User"
+  },
+  "headers": {
+    "Content-Length": "20",
+    "Content-Type": "application/json;charset=utf-8",
+    "Accept": "application/json, text/plain, */*",
+    "User-Agent": "axios/0.19.2",
+    "Host": "localhost:3001",
+    "Connection": "close",
+    "Version": "HTTP/1.1"
+  }
+}
+I, [2020-03-19T22:45:08.386152 #62308]  INFO -- : Found matching response for POST /users
+D, [2020-03-19T22:45:08.386215 #62308] DEBUG -- : {
+  "status": 201,
+  "headers": {
+    "Content-Type": "application/json;charset=utf-8"
+  },
+  "body": {
+    "id": 1,
+    "name": "Test user"
+  }
+}
+I, [2020-03-19T22:45:08.391402 #62308]  INFO -- : Verifying - interactions matched
+I, [2020-03-19T22:45:08.396172 #62308]  INFO -- : Cleared interactions
+I, [2020-03-19T22:45:08.408195 #62308]  INFO -- : Writing pact for provider to /Users/mick.mccarthy/Documents/projects/node/pactPostIssue/consumer/test/pact/pacts/consumer-provider.json
