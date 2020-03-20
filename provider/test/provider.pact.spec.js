@@ -14,7 +14,7 @@ const server = app.listen(port, function() {
 describe("Pact Verification", function() {
     it("validates the expectations of the client", function() {
         const opts = {
-            logLevel: 'INFO',
+            logLevel: 'DEBUG',
             providerBaseUrl: `http://localhost:${port}`,
             provider: 'provider',
             providerVersion: '1.0.0',
